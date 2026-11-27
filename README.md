@@ -1,5 +1,9 @@
 # agent-vault
 
+[![CI](https://github.com/alexisrazok/agent-vault/actions/workflows/ci.yml/badge.svg)](https://github.com/alexisrazok/agent-vault/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/alexisrazok/agent-vault)](https://github.com/alexisrazok/agent-vault/releases)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 Proxy local de secretos y limpiador de salidas en tiempo real escrito en Rust para que agentes de código y servidores MCP usen APIs sin ver tus claves reales en disco ni en su ventana de contexto.
 
 ## Características de seguridad
@@ -11,6 +15,10 @@ Proxy local de secretos y limpiador de salidas en tiempo real escrito en Rust pa
 
 ## Instalación
 
+### Binarios precompilados (Linux, macOS, Windows)
+Descarga el binario correspondiente a tu sistema operativo desde la página de [Releases](https://github.com/alexisrazok/agent-vault/releases/latest).
+
+### Desde código fuente con Cargo
 ```bash
 cargo install --git https://github.com/alexisrazok/agent-vault
 ```
@@ -32,9 +40,9 @@ agent-vault run --env GITHUB_TOKEN=secret://GITHUB_TOKEN -- npx -y @modelcontext
 agent-vault mcp-snippet github --env GITHUB_TOKEN=secret://GITHUB_TOKEN -- npx -y @modelcontextprotocol/server-github
 ```
 
-## Tests
+## Desarrollo, Seguridad y Licencia
 
-```bash
-cargo test
-cargo clippy --all-targets -- -D warnings
-```
+- Guía de contribución: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Política de seguridad: [SECURITY.md](SECURITY.md)
+- Historial de cambios: [CHANGELOG.md](CHANGELOG.md)
+- Licencia: [Apache-2.0](LICENSE) y [NOTICE](NOTICE)
