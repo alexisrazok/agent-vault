@@ -18,9 +18,9 @@ Proxy local de secretos y limpiador de salidas en tiempo real escrito en Rust pa
 ### Binarios precompilados (Linux, macOS, Windows)
 Descarga el binario correspondiente a tu sistema operativo desde la página de [Releases](https://github.com/alexisrazok/agent-vault/releases/latest).
 
-### Desde código fuente con Cargo
+### Desde crates.io con Cargo
 ```bash
-cargo install --git https://github.com/alexisrazok/agent-vault
+cargo install agent-vault-cli
 ```
 
 ## Uso rápido
