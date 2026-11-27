@@ -1,12 +1,17 @@
 [package]
-name = "agent-vault"
+name = "agent-vault-cli"
 version = "0.1.0"
 edition = "2021"
 description = "Cross-platform zero-knowledge secret proxy and output redactor for AI coding agents and MCP servers."
 license = "Apache-2.0"
+repository = "https://github.com/alexisrazok/agent-vault"
 readme = "README.md"
 keywords = ["ai", "agents", "mcp", "security", "secrets"]
 categories = ["command-line-utilities", "cryptography"]
+
+[[bin]]
+name = "agent-vault"
+path = "src/main.rs"
 
 [dependencies]
 argon2 = "0.5"
